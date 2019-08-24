@@ -72,7 +72,7 @@ function movimentoToJson(param) {
       
     }
   }
-  return "\n        [\n            {\n                \"y\": " + (String(data[0]) + (",\n                \"m\": " + (String(data[1]) + (",\n                \"d\": " + (String(data[2]) + ("\n            },\n            {\n                \"opType\": \"" + (String(match[0]) + ("\",\n                \"condomino\": \"" + (String(match[1]) + ("\",\n                \"causale\": \"" + (String(match[2]) + ("\",\n                \"importo\": " + (String(match[3]) + "\n            }\n        ]\n    ")))))))))))));
+  return "\n    [\n      {\n        \"y\": " + (String(data[0]) + (",\n        \"m\": " + (String(data[1]) + (",\n        \"d\": " + (String(data[2]) + ("\n      },\n      {\n        \"opType\": \"" + (String(match[0]) + ("\",\n        \"condomino\": \"" + (String(match[1]) + ("\",\n        \"causale\": \"" + (String(match[2]) + ("\",\n        \"importo\": " + (String(match[3]) + "\n      }\n    ]\n    ")))))))))))));
 }
 
 exports.condominoToJson = condominoToJson;

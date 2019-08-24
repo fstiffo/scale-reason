@@ -39,18 +39,18 @@ let movimentoToJson = ((data, operazione): ScaleType.movimento) => {
     };
 
   {j|
-        [
-            {
-                "y": $y,
-                "m": $m,
-                "d": $d
-            },
-            {
-                "opType": "$opType",
-                "condomino": "$condomino",
-                "causale": "$causale",
-                "importo": $importo
-            }
-        ]
+    [
+      {
+        "y": $y,
+        "m": $m,
+        "d": $d
+      },
+      {
+        "opType": "$opType",
+        "condomino": "$condomino",
+        "causale": "$causale",
+        "importo": $importo
+      }
+    ]
     |j};
 };
